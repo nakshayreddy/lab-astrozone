@@ -20,6 +20,12 @@ public class AstroFormController extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+		User u1=new User();
+		AstroCalculator a1=newAstroCalculator();
+		a1.findSign();
+		
 /* 
 		String name=request.getParameter("name");
 		String gender=request.getParameter("gender");
